@@ -20,7 +20,8 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 origins = [
     "http://localhost",
     "http://localhost:8000",
-    "https://trajweb.moonstripe.com"
+    "https://trajweb.moonstripe.com",
+    "https://moonstripe-traj-frontend.deno.dev/"
 ]
 
 app.add_middleware(
