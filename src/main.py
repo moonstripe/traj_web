@@ -32,6 +32,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+@app.get("/")
+async def hello_world():
+    return {"hello": "world"}
+
 @app.get("/api/sim_parameters")
 async def request_sim_params(
     fuel_masses: Annotated[list[float], Query()], 
